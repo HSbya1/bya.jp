@@ -12,14 +12,14 @@
 
   <meta
     name="description"
-    content="BY／Λは、家具・備品の選定、スタイリング、空間設計を横断し、商業空間・宿泊施設の体験を一貫して整えるデザインスタジオです。"
+    content="BY／Λは、家具・アート・備品の選定、調達、空間のスタイリングを通して、オフィスや商業空間、宿泊施設の体験を一貫して整えるデザインスタジオです。"
   />
 
   <link rel="icon" type="image/jpeg" href="icon-jpg.jpg" />
 
   <style>
     :root {
-      --background: #FFFFFF;
+      --background: #ffffff;
       --text: #111111;
       --muted: #777777;
 
@@ -62,10 +62,6 @@
       color: inherit;
     }
 
-    /*
-      ページ全体
-      PCでは基本的に1画面で完結させます。
-    */
     .hero {
       position: relative;
       width: 100%;
@@ -89,7 +85,7 @@
       height: 100%;
 
       overflow: hidden;
-      background: #ddddda;
+      background: #ececec;
     }
 
     .hero-image img {
@@ -111,7 +107,6 @@
 
     /*
       画像左端のグラデーション
-      左側テキストとの境界を自然にします。
     */
     .hero-image::after {
       content: "";
@@ -122,10 +117,10 @@
       background:
         linear-gradient(
           90deg,
-          rgba(245, 245, 242, 0.9) 0%,
-          rgba(245, 245, 242, 0.52) 14%,
-          rgba(245, 245, 242, 0.12) 35%,
-          rgba(245, 245, 242, 0) 50%
+          rgba(255, 255, 255, 0.92) 0%,
+          rgba(255, 255, 255, 0.56) 14%,
+          rgba(255, 255, 255, 0.12) 35%,
+          rgba(255, 255, 255, 0) 50%
         );
 
       pointer-events: none;
@@ -138,7 +133,7 @@
       position: relative;
       z-index: 2;
 
-      width: min(560px, 48vw);
+      width: min(580px, 49vw);
       height: 100%;
 
       padding:
@@ -169,7 +164,8 @@
     .brand-logo {
       display: block;
 
-      width: clamp(210px, 19vw, 292px);
+      width: clamp(240px, 21.5vw, 330px);
+      max-width: 100%;
       height: auto;
 
       object-fit: contain;
@@ -177,30 +173,38 @@
     }
 
     /*
-      中央のコピーエリア
+      コピー部分
     */
     .main-copy {
-      margin-top: clamp(54px, 11vh, 118px);
+      margin-top: clamp(48px, 9.5vh, 100px);
     }
 
     .main-copy h1 {
       max-width: 540px;
       margin: 0;
 
-      font-size: clamp(36px, 3.25vw, 52px);
-      line-height: 1.04;
+      font-size: clamp(36px, 3.15vw, 50px);
+      line-height: 1.08;
       font-weight: 500;
-      letter-spacing: -0.052em;
+      letter-spacing: -0.045em;
+    }
+
+    .main-copy h1 .line {
+      display: block;
+    }
+
+    .main-copy h1 .line + .line {
+      margin-top: 8px;
     }
 
     .lead {
-      max-width: 400px;
-      margin: 26px 0 0;
+      max-width: 370px;
+      margin: 24px 0 0;
 
-      font-size: 14px;
-      line-height: 1.75;
+      font-size: 13px;
+      line-height: 1.68;
       font-weight: 400;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
     }
 
     .lead-en {
@@ -209,7 +213,7 @@
 
       color: var(--muted);
 
-      font-size: 13px;
+      font-size: 12px;
       line-height: 1.55;
       letter-spacing: 0.01em;
     }
@@ -252,9 +256,6 @@
         color 280ms ease;
     }
 
-    /*
-      ホバー時に白背景が左から入ります。
-    */
     .primary-button::before {
       content: "";
 
@@ -403,25 +404,24 @@
       }
 
       .content {
-        width: 54vw;
+        width: 55vw;
       }
 
       .brand-logo {
-        width: clamp(200px, 25vw, 260px);
+        width: clamp(230px, 29vw, 295px);
       }
 
       .main-copy {
-        margin-top: clamp(48px, 8vh, 82px);
+        margin-top: clamp(44px, 7.5vh, 74px);
       }
 
       .main-copy h1 {
-        font-size: clamp(34px, 4.5vw, 46px);
+        font-size: clamp(34px, 4.2vw, 45px);
       }
     }
 
     /*
       スマートフォン
-      写真を全面背景にして、左側に文字を重ねます。
     */
     @media (max-width: 680px) {
       .hero {
@@ -442,15 +442,15 @@
         background:
           linear-gradient(
             90deg,
-            rgba(245, 245, 242, 0.97) 0%,
-            rgba(245, 245, 242, 0.88) 42%,
-            rgba(245, 245, 242, 0.28) 77%,
-            rgba(245, 245, 242, 0.08) 100%
+            rgba(255, 255, 255, 0.97) 0%,
+            rgba(255, 255, 255, 0.88) 42%,
+            rgba(255, 255, 255, 0.28) 77%,
+            rgba(255, 255, 255, 0.08) 100%
           ),
           linear-gradient(
             0deg,
-            rgba(245, 245, 242, 0.82) 0%,
-            rgba(245, 245, 242, 0) 44%
+            rgba(255, 255, 255, 0.82) 0%,
+            rgba(255, 255, 255, 0) 44%
           );
       }
 
@@ -465,32 +465,40 @@
       }
 
       .brand-logo {
-        width: 220px;
-        max-width: 68vw;
+        width: 245px;
+        max-width: 76vw;
       }
 
       .main-copy {
-        margin-top: clamp(52px, 10vh, 82px);
+        margin-top: clamp(46px, 8.5vh, 70px);
       }
 
       .main-copy h1 {
         max-width: 340px;
 
-        font-size: clamp(34px, 10vw, 44px);
-        line-height: 1.03;
+        font-size: clamp(33px, 9.4vw, 42px);
+        line-height: 1.08;
+      }
+
+      .main-copy h1 .line + .line {
+        margin-top: 6px;
       }
 
       .lead {
-        max-width: 315px;
-        margin-top: 22px;
+        max-width: 300px;
+        margin-top: 20px;
 
-        font-size: 13px;
-        line-height: 1.7;
+        font-size: 12.5px;
+        line-height: 1.65;
+      }
+
+      .lead-en {
+        font-size: 11.5px;
       }
 
       .primary-button {
         width: min(226px, 100%);
-        margin-top: 25px;
+        margin-top: 24px;
       }
 
       .links {
@@ -503,24 +511,30 @@
     */
     @media (max-height: 720px) and (min-width: 681px) {
       .content {
-        padding-top: 34px;
+        padding-top: 30px;
         padding-bottom: 25px;
       }
 
       .brand-logo {
-        width: 220px;
+        width: 250px;
       }
 
       .main-copy {
-        margin-top: 38px;
+        margin-top: 30px;
       }
 
       .main-copy h1 {
         font-size: 38px;
+        line-height: 1.1;
+      }
+
+      .main-copy h1 .line + .line {
+        margin-top: 6px;
       }
 
       .lead {
         margin-top: 18px;
+        font-size: 12.5px;
         line-height: 1.6;
       }
 
@@ -562,7 +576,7 @@
       <div class="brand">
         <img
           class="brand-logo"
-          src="bya-logo.jpg"
+          src="bya-logo.png"
           alt="BY／Λ"
         />
       </div>
@@ -570,13 +584,13 @@
       <div class="main-copy">
 
         <h1>
-          Objects and space,<br />
-          composed as one.
+          <span class="line">Objects and space,</span>
+          <span class="line">composed as one.</span>
         </h1>
 
         <p class="lead">
           <span class="lead-en">
-            Interior design, furniture sourcing and spatial direction.
+            Furniture, art and object sourcing, procurement and spatial styling.
           </span>
 
           家具・アート・備品の選定、調達、空間のスタイリングまで。<br />
@@ -589,7 +603,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>Start a project/contact</span>
+          <span>Start a project</span>
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
 
